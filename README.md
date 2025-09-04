@@ -1,12 +1,40 @@
-# React + Vite
+🎬 VFX Article Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a React + Vite project that presents an article-style website explaining the VFX production pipeline.
 
-Currently, two official plugins are available:
+The goal is to make it easy for freshers to understand how the VFX pipeline works — from pre-production to final delivery — with a clean UI and simple explanations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📌 About the Repo
 
-## Expanding the ESLint configuration
+Name: VFX Article Website
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Type: Frontend (React + Vite)
+
+Purpose: Educational website to explain the VFX pipeline in a beginner-friendly way.
+
+Audience: Students, freshers, and anyone new to VFX production.
+
+🚀 Tech Stack
+
+React + Vite
+
+TailwindCSS (for styling)
+
+Framer Motion (for animations)
+
+📦 Getting Started
+
+Clone the repo
+
+git clone https://github.com/yourusername/vfx-article.git
+cd vfx-article
+
+
+Install dependencies
+
+npm install
+
+
+Run the development server
+
+npm run dev
