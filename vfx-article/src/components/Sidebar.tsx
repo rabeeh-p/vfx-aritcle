@@ -13,6 +13,7 @@ interface SidebarProps {
   onClose?: () => void;
 }
 
+// navigation items
 const navigationItems = [
   { name: 'Home', href: '/', icon: HomeIcon },
   { name: 'Pipeline Stages', href: '/pipeline', icon: CogIcon },
@@ -20,6 +21,8 @@ const navigationItems = [
   { name: 'Resources', href: '/resources', icon: BookOpenIcon },
 ];
 
+
+// sidebar
 const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   return (
     <div className="flex flex-col h-full bg-gray-800 border-r border-gray-700">
