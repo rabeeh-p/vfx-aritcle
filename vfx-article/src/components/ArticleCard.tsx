@@ -12,11 +12,12 @@ interface Article {
   image: string;
   tags: string[];
 }
-
+// INTERFACE
 interface ArticleCardProps {
   article: Article;
 }
 
+// ARTICLE CARD
 const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   return (
     <motion.div
@@ -72,5 +73,10 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
     </motion.div>
   );
 };
+
+
+
+
+
 
 export default ArticleCard;
