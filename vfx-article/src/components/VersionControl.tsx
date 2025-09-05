@@ -2,6 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { versionData } from '../data/trackingData';
 
+
+
+
+
+
+// version control
 const VersionControl: React.FC = () => {
   return (
     <div className="space-y-8">
@@ -9,6 +15,8 @@ const VersionControl: React.FC = () => {
         <h2 className="text-3xl font-bold text-white mb-8 text-center">
           Asset Version Control
         </h2>
+
+
 
         <div className="grid lg:grid-cols-2 gap-8">
           {versionData.assets.map((asset, index) => (
@@ -74,7 +82,6 @@ const VersionControl: React.FC = () => {
         </div>
       </div>
 
-      {/* Version Control Workflow */}
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
         <h3 className="text-2xl font-bold text-white mb-6">Version Control Workflow</h3>
         
@@ -118,5 +125,9 @@ const VersionControl: React.FC = () => {
     </div>
   );
 };
+
+
+
+
 
 export default VersionControl;
