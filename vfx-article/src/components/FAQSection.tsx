@@ -13,6 +13,9 @@ interface FAQSectionProps {
   faqs: FAQ[];
 }
 
+
+
+// FAQ SECTION
 const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
   const [openFAQ, setOpenFAQ] = useState<string | null>(null);
 
@@ -44,6 +47,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
               </motion.div>
             </button>
 
+          {/* ANIMATION */}
             <AnimatePresence>
               {openFAQ === faq.id && (
                 <motion.div
