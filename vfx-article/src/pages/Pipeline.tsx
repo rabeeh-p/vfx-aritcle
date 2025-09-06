@@ -5,8 +5,6 @@ import { pipelineStages } from '../data/pipelineData';
 
 const Pipeline: React.FC = () => {
 
-
-  
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-6">
       <div className="max-w-7xl mx-auto">
@@ -25,6 +23,8 @@ const Pipeline: React.FC = () => {
           </p>
         </motion.div>
 
+
+
         {/* Pipeline Flow Diagram */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -32,6 +32,8 @@ const Pipeline: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-16 p-8 bg-gray-800/50 rounded-2xl border border-gray-700"
         >
+
+          
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Production Flow</h3>
           <div className="flex flex-wrap justify-center items-center gap-4">
             {pipelineStages.map((stage, index) => (
