@@ -57,8 +57,10 @@ const Pipeline: React.FC = () => {
           </div>
         </motion.div>
 
+
+
         {/* Pipeline Stages Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        {/* <div className="grid lg:grid-cols-2 gap-8">
           {pipelineStages.map((stage, index) => (
             <motion.div
               key={stage.id}
@@ -69,10 +71,14 @@ const Pipeline: React.FC = () => {
               <PipelineCard stage={stage} />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
+
+
+
+
 
 export default Pipeline;
