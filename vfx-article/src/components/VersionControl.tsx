@@ -3,10 +3,6 @@ import { motion } from 'framer-motion';
 import { versionData } from '../data/trackingData';
 
 
-
-
-
-
 // version control
 const VersionControl: React.FC = () => {
   return (
@@ -15,8 +11,6 @@ const VersionControl: React.FC = () => {
         <h2 className="text-3xl font-bold text-white mb-8 text-center">
           Asset Version Control
         </h2>
-
-
 
         <div className="grid lg:grid-cols-2 gap-8">
           {versionData.assets.map((asset, index) => (
