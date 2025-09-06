@@ -18,6 +18,16 @@ interface ArticleCardProps {
   article: Article;
 }
 
+
+
+
+
+
+
+
+
+
+
 // ARTICLE CARD
 const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   return (
@@ -40,6 +50,14 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
         </div>
       </div>
 
+
+
+
+
+
+
+
+      {/* TITLE */}
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors line-clamp-2">
           {article.title}
