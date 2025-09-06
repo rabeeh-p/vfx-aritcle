@@ -14,6 +14,17 @@ const Resources: React.FC = () => {
     { id: 'workflow', name: 'Workflow Tips' }
   ];
 
+
+
+
+
+
+
+
+
+
+
+  
   const filteredArticles = activeCategory === 'all' 
     ? articles 
     : articles.filter(article => article.category === activeCategory);

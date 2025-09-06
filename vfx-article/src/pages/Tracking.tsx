@@ -10,7 +10,7 @@ const Tracking: React.FC = () => {
   const tabs = [
     { id: 'kanban', name: 'Kanban Board', description: 'Visual task management' },
     { id: 'progress', name: 'Progress Dashboard', description: 'Project metrics' },
-    { id: 'versions', name: 'Version Control', description: 'Asset versioning' }
+    // { id: 'versions', name: 'Version Control', description: 'Asset versioning' }
   ];
 
   return (
@@ -57,16 +57,6 @@ const Tracking: React.FC = () => {
             ))}
           </div>
         </motion.div>
-
-
-
-
-
-
-
-
-
-
 
         {/* Tab Content */}
         <motion.div
