@@ -11,7 +11,7 @@ const Resources: React.FC = () => {
     { id: 'all', name: 'All Resources' },
     { id: 'beginner', name: 'Beginner Guide' },
     { id: 'tools', name: 'Industry Tools' },
-    { id: 'workflow', name: 'Workflow Tips' }
+    // { id: 'workflow', name: 'Workflow Tips' }
   ];
 
   const filteredArticles = activeCategory === 'all' 
