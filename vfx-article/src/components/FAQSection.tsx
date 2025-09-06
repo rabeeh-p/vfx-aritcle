@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
+
+// INTERFACE FAQ
 interface FAQ {
   id: string;
   question: string;
@@ -12,6 +14,15 @@ interface FAQ {
 interface FAQSectionProps {
   faqs: FAQ[];
 }
+
+
+
+
+
+
+
+
+
 
 
 // FAQ SECTION
