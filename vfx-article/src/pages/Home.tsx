@@ -19,13 +19,13 @@ const Home: React.FC = () => {
       link: '/tracking',
       gradient: 'from-purple-400 to-pink-500'
     },
-    {
-      title: 'Learning Resources',
-      description: 'Access curated articles, guides, and FAQs for VFX freshers',
-      icon: PlayIcon,
-      link: '/resources',
-      gradient: 'from-green-400 to-cyan-500'
-    }
+    // {
+    //   title: 'Learning Resources',
+    //   description: 'Access curated articles, guides, and FAQs for VFX freshers',
+    //   icon: PlayIcon,
+    //   link: '/resources',
+    //   gradient: 'from-green-400 to-cyan-500'
+    // }
   ];
 
   return (
