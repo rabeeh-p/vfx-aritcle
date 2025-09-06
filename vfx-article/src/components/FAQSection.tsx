@@ -16,15 +16,6 @@ interface FAQSectionProps {
 }
 
 
-
-
-
-
-
-
-
-
-
 // FAQ SECTION
 const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
   const [openFAQ, setOpenFAQ] = useState<string | null>(null);
