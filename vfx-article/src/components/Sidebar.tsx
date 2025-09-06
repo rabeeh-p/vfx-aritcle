@@ -23,7 +23,7 @@ const navigationItems = [
 
 
 // sidebar
-const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
+const Sidebar: React.FC<SidebarProps> = ({  }) => {
   return (
     <div className="flex flex-col h-full bg-gray-800 border-r border-gray-700">
       <div className="flex items-center justify-between p-6">
