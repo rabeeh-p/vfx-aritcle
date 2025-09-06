@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ClockIcon, UserIcon } from '@heroicons/react/24/outline';
 
+// INTERFACE ARTICLE
 interface Article {
   id: string;
   title: string;
