@@ -4,7 +4,7 @@ import KanbanBoard from '../components/KanbanBoard';
 import ProgressDashboard from '../components/ProgressDashboard';
 import VersionControl from '../components/VersionControl';
 
-const Tracking: React.FC = () => {
+const Tracking = () => {
   const [activeTab, setActiveTab] = useState('kanban');
 
   const tabs = [
@@ -23,11 +23,15 @@ const Tracking: React.FC = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl font-bold text-white mb-6">
-            VFX <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Tracking System</span>
+            VFX{" "}
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              Tracking System
+            </span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Learn how production tracking systems like ftrack help manage complex VFX projects, 
-            coordinate teams, and maintain quality throughout the pipeline.
+            Learn how production tracking systems like ftrack help manage complex
+            VFX projects, coordinate teams, and maintain quality throughout the
+            pipeline.
           </p>
         </motion.div>
 
