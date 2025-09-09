@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import PipelineCard from '../components/PipelineCard';
-import { pipelineStages } from '../data/pipelineData';
 
 const Pipeline: React.FC = () => {
+
+
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-6">

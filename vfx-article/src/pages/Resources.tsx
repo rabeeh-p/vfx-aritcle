@@ -16,14 +16,6 @@ const Resources: React.FC = () => {
 
 
 
-
-
-
-
-
-
-
-
   
   const filteredArticles = activeCategory === 'all' 
     ? articles 
@@ -39,7 +31,7 @@ const Resources: React.FC = () => {
           className="text-center mb-16"
         >
 
-          
+
           <h1 className="text-5xl font-bold text-white mb-6">
             Learning <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Resources</span>
           </h1>
