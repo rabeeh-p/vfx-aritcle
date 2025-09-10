@@ -10,7 +10,8 @@ const Resources: React.FC = () => {
   const categories = [
     { id: 'all', name: 'All Resources' },
     { id: 'beginner', name: 'Beginner Guide' },
-    
+    { id: 'tools', name: 'Industry Tools' },
+    { id: 'workflow', name: 'Workflow Tips' }
   ];
 
   
@@ -42,9 +43,6 @@ const Resources: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
-
-
-          
           {categories.map((category) => (
             <button
               key={category.id}
