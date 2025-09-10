@@ -10,11 +10,8 @@ const Resources: React.FC = () => {
   const categories = [
     { id: 'all', name: 'All Resources' },
     { id: 'beginner', name: 'Beginner Guide' },
-    { id: 'tools', name: 'Industry Tools' },
-    { id: 'workflow', name: 'Workflow Tips' }
+    
   ];
-
-
 
   
   const filteredArticles = activeCategory === 'all' 
@@ -30,8 +27,6 @@ const Resources: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-
-
           <h1 className="text-5xl font-bold text-white mb-6">
             Learning <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Resources</span>
           </h1>
@@ -47,6 +42,9 @@ const Resources: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
+
+
+          
           {categories.map((category) => (
             <button
               key={category.id}
