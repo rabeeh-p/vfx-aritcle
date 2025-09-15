@@ -14,6 +14,7 @@ const Resources: React.FC = () => {
     { id: 'workflow', name: 'Workflow Tips' }
   ];
 
+
   
   const filteredArticles = activeCategory === 'all' 
     ? articles 
@@ -89,5 +90,7 @@ const Resources: React.FC = () => {
     </div>
   );
 };
+
+
 
 export default Resources;
