@@ -12,7 +12,7 @@ interface DocumentType {
 }
 
 // Example asset documents
-const assetDocuments: DocumentType[] = [
+const documents: DocumentType[] = [
   {
     id: 1,
     name: "Storyboard.pdf",
@@ -50,108 +50,119 @@ const assetDocuments: DocumentType[] = [
 
 const AssetDocument: React.FC = () => {
   return (
-    <div className="bg-gray-900 min-h-screen py-12 px-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Asset{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Documentation
-            </span>
-          </h2>
-          <p className="text-lg text-gray-400">
-            Upload, manage, and review essential production documents for your
-            VFX pipeline.
-          </p>
-        </motion.div>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* 🔹 Animated Background */}
+      <motion.div
+        initial={{ backgroundPosition: "0% 50%" }}
+        animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+        className="absolute inset-0 bg-gradient-to-r from-gray-900 via-purple-900 to-black bg-[length:200%_200%] z-0"
+      />
 
-        {/* Upload Button */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-          className="flex justify-center mb-10"
-        >
-          <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 hover:scale-105 transition-transform">
-            <Upload className="w-5 h-5" />
-            Upload Document
-          </button>
-        </motion.div>
+      {/* 🔹 Content */}
+      <div className="relative z-10 py-12 px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Asset{" "}
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Documentation
+              </span>
+            </h2>
+            <p className="text-lg text-gray-300">
+              Upload, manage, and review essential production documents for your
+              VFX pipeline.
+            </p>
+          </motion.div>
 
-        {/* Document Cards */}
-        <motion.div
-          initial="hidden"
-          animate="show"
-          variants={{
-            hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: { staggerChildren: 0.15 },
-            },
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {assetDocuments.map((doc) => (
-            <motion.div
-              key={doc.id}
-              variants={{
-                hidden: { opacity: 0, y: 40 },
-                show: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.6 }}
-              className="bg-gray-800 border border-gray-700 rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all"
-            >
-              {/* Title Row */}
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-3">
-                  <FileText className="w-6 h-6 text-cyan-400" />
-                  <h3 className="text-lg font-semibold text-white">
-                    {doc.name}
-                  </h3>
+          {/* Upload Button */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center mb-10"
+          >
+            <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 hover:scale-105 transition-transform">
+              <Upload className="w-5 h-5" />
+              Upload Document
+            </button>
+          </motion.div>
+
+          {/* Document Cards */}
+          <motion.div
+            initial="hidden"
+            animate="show"
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: { staggerChildren: 0.15 },
+              },
+            }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {documents.map((doc) => (
+              <motion.div
+                key={doc.id}
+                variants={{
+                  hidden: { opacity: 0, y: 40 },
+                  show: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.6 }}
+                className="bg-gray-800/90 border border-gray-700 rounded-2xl shadow-xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all"
+              >
+                {/* Title Row */}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <FileText className="w-6 h-6 text-cyan-400" />
+                    <h3 className="text-lg font-semibold text-white">
+                      {doc.name}
+                    </h3>
+                  </div>
+                  <button className="text-gray-400 hover:text-red-500 transition-colors">
+                    <Trash2 className="w-5 h-5" />
+                  </button>
                 </div>
-                <button className="text-gray-400 hover:text-red-500 transition-colors">
-                  <Trash2 className="w-5 h-5" />
-                </button>
-              </div>
 
-              {/* Meta Info */}
-              <div className="text-sm text-gray-400 space-y-1 mb-4">
-                <p>Size: {doc.size}</p>
-                <p>Uploaded by: {doc.uploadedBy}</p>
-              </div>
+                {/* Meta Info */}
+                <div className="text-sm text-gray-400 space-y-1 mb-4">
+                  <p>Size: {doc.size}</p>
+                  <p>Uploaded by: {doc.uploadedBy}</p>
+                </div>
 
-              {/* Documentation Points */}
-              <ul className="text-sm text-gray-300 space-y-2 list-disc list-inside mb-6">
-                {doc.notes.map((point, idx) => (
-                  <motion.li
-                    key={idx}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.2 + idx * 0.1 }}
-                  >
-                    {point}
-                  </motion.li>
-                ))}
-              </ul>
+                {/* Documentation Points */}
+                <ul className="text-sm text-gray-300 space-y-2 list-disc list-inside mb-6">
+                  {doc.notes.map((point, idx) => (
+                    <motion.li
+                      key={idx}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.2 + idx * 0.1 }}
+                    >
+                      {point}
+                    </motion.li>
+                  ))}
+                </ul>
 
-              {/* Actions */}
-              <div className="flex justify-between">
-                <button className="px-4 py-2 bg-gray-700 text-gray-300 hover:bg-gray-600 rounded-lg flex items-center gap-2 transition">
-                  <FolderOpen className="w-4 h-4" /> Open
-                </button>
-                <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg shadow hover:scale-105 transition-transform">
-                  Download
-                </button>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                {/* Actions */}
+                <div className="flex justify-between">
+                  <button className="px-4 py-2 bg-gray-700 text-gray-300 hover:bg-gray-600 rounded-lg flex items-center gap-2 transition">
+                    <FolderOpen className="w-4 h-4" /> Open
+                  </button>
+                  <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg shadow hover:scale-105 transition-transform">
+                    Download
+                  </button>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </div>
   );
