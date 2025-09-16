@@ -89,6 +89,33 @@ const AssetDocument: React.FC = () => {
             </p>
           </motion.div>
 
+          {/* 🔹 What is Asset Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-gray-800/80 border border-gray-700 rounded-2xl shadow-xl p-6 mb-10"
+          >
+            <h3 className="text-2xl font-semibold text-cyan-400 mb-3">
+              📌 What is an Asset?
+            </h3>
+            <p className="text-gray-300 mb-4">
+              In a production pipeline, an <span className="text-cyan-400">asset</span> is any resource 
+              such as storyboards, concept art, models, textures, or notes that are used to create 
+              the final output. Assets are the building blocks of a project and ensure smooth 
+              collaboration between different teams.
+            </p>
+            <h4 className="text-xl font-semibold text-purple-400 mb-2">
+              🛠 How to Create an Asset:
+            </h4>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Prepare your file (Storyboard, Concept Art, VFX Notes, etc.).</li>
+              <li>Click on <span className="text-cyan-400">Upload Document</span> above.</li>
+              <li>Fill in the details (name, category, and notes).</li>
+              <li>Submit it to make it accessible for the entire team.</li>
+            </ul>
+          </motion.div>
+
           {/* Upload Button */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -159,12 +186,9 @@ const AssetDocument: React.FC = () => {
                 </ul>
 
                 {/* Actions */}
-                <div className="flex justify-between">
+                <div className="flex justify-start">
                   <button className="px-4 py-2 bg-gray-700 text-gray-300 hover:bg-gray-600 rounded-lg flex items-center gap-2 transition">
                     <FolderOpen className="w-4 h-4" /> Open
-                  </button>
-                  <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg shadow hover:scale-105 transition-transform">
-                    Download
                   </button>
                 </div>
               </motion.div>

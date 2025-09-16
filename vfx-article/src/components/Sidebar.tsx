@@ -19,6 +19,7 @@ const navigationItems = [
   { name: 'Pipeline Stages', href: '/pipeline', icon: CogIcon },
   { name: 'Tracking System', href: '/tracking', icon: ClipboardDocumentListIcon },
   { name: 'Resources', href: '/resources', icon: BookOpenIcon },
+  { name: 'Asset', href: '/asset', icon: BookOpenIcon },
 ];
 
 
