@@ -51,12 +51,20 @@ const documents: DocumentType[] = [
 const AssetDocument: React.FC = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* 🔹 Animated Background */}
+      {/* 🔹 Space Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black z-0" />
+
+      {/* 🔹 Star Layer */}
       <motion.div
-        initial={{ backgroundPosition: "0% 50%" }}
-        animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
-        transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-        className="absolute inset-0 bg-gradient-to-r from-gray-900 via-purple-900 to-black bg-[length:200%_200%] z-0"
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            "radial-gradient(1px 1px at 20px 30px, white, transparent), radial-gradient(1px 1px at 400px 150px, white, transparent), radial-gradient(2px 2px at 250px 300px, white, transparent), radial-gradient(1px 1px at 600px 400px, white, transparent), radial-gradient(2px 2px at 800px 100px, white, transparent)",
+          backgroundRepeat: "repeat",
+          backgroundSize: "800px 800px",
+        }}
+        animate={{ backgroundPosition: ["0px 0px", "800px 800px", "0px 0px"] }}
+        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
       />
 
       {/* 🔹 Content */}
