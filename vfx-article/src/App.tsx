@@ -16,6 +16,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/pipeline" element={<Pipeline />} />
             <Route path="/tracking" element={<Tracking />} />
             <Route path="/asset" element={<AssetDocument />} />
             <Route path="/resources" element={<Resources />} />
