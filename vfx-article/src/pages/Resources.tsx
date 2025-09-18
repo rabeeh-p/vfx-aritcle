@@ -10,8 +10,7 @@ const Resources: React.FC = () => {
   const categories = [
     { id: 'all', name: 'All Resources' },
     { id: 'beginner', name: 'Beginner Guide' },
-    { id: 'tools', name: 'Industry Tools' },
-    { id: 'workflow', name: 'Workflow Tips' }
+
   ];
 
 
