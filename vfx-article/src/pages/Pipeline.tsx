@@ -33,7 +33,7 @@ const Pipeline = () => {
           className="mb-16 p-8 bg-gray-800/50 rounded-2xl border border-gray-700"
         >
           <h3 className="text-2xl font-bold text-white mb-6 text-center">
-            Production Flow
+            Production Flow Tracking
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-4">
             {pipelineStages.map((stage, index) => (

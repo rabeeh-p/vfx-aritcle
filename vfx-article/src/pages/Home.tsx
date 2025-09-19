@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900">
-
+      
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-purple-500/10 to-pink-500/10"></div>
@@ -63,6 +63,7 @@ const Home: React.FC = () => {
               className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
             >
               Master the complete VFX production pipeline and tracking systems. 
+              From pre-production to delivery, learn industry-standard workflows designed for freshers.
             </motion.p>
 
             <motion.div
@@ -89,6 +90,9 @@ const Home: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+
+
 
       {/* Features Section */}
       <section className="py-24 px-6">
