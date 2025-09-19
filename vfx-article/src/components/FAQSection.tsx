@@ -11,20 +11,24 @@ interface FAQ {
   category: string;
 }
 
-// interface FAQSectionProps {
-//   faqs: FAQ[];
-// }
+interface FAQSectionProps {
+  faqs: FAQ[];
+}
 
 
 // FAQ SECTION
 const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
   const [openFAQ, setOpenFAQ] = useState<string | null>(null);
 
+
+
   return (
     <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
       <h2 className="text-3xl font-bold text-white mb-8 text-center">
         Frequently Asked Questions
       </h2>
+
+
 
       <div className="space-y-4 max-w-4xl mx-auto">
         {faqs.map((faq, index) => (
@@ -47,6 +51,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
                 <ChevronDownIcon className="w-5 h-5 text-gray-400" />
               </motion.div>
             </button>
+
 
           {/* ANIMATION */}
             <AnimatePresence>
