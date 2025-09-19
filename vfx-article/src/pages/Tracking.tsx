@@ -10,8 +10,12 @@ const Tracking = () => {
   const tabs = [
     { id: 'kanban', name: 'Kanban Board', description: 'Visual task management' },
     { id: 'progress', name: 'Progress Dashboard', description: 'Project metrics' },
-    { id: 'versions', name: 'Version Control', description: 'Asset versioning' }
+    // { id: 'versions', name: 'Version Control', description: 'Asset versioning' }
   ];
+
+
+
+
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-6">
