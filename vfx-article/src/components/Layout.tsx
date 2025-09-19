@@ -10,6 +10,8 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  
+
   return (
     <div className="flex h-screen bg-gray-900">
       <AnimatePresence>

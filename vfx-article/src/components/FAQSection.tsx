@@ -11,9 +11,9 @@ interface FAQ {
   category: string;
 }
 
-interface FAQSectionProps {
-  faqs: FAQ[];
-}
+// interface FAQSectionProps {
+//   faqs: FAQ[];
+// }
 
 
 // FAQ SECTION
