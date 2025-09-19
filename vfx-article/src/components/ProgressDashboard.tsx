@@ -5,6 +5,7 @@ import { progressData } from '../data/trackingData';
 const ProgressDashboard: React.FC = () => {
   return (
     <div className="space-y-8">
+
       {/* Project Overview Cards */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {progressData.overview.map((metric, index) => (
@@ -24,6 +25,7 @@ const ProgressDashboard: React.FC = () => {
           </motion.div>
         ))}
       </div>
+
 
       {/* Department Progress */}
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
@@ -100,6 +102,7 @@ const ProgressDashboard: React.FC = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
