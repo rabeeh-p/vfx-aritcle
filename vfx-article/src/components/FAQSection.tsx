@@ -53,6 +53,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
             </button>
 
 
+          {/* ANIMATION */}
             <AnimatePresence>
               {openFAQ === faq.id && (
                 <motion.div
