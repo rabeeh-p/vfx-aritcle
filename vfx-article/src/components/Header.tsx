@@ -12,15 +12,6 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
 
-
-
-
-
-
-
-
-
-  
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
@@ -59,6 +50,8 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
             )}
           </div>
         </div>
+
+
 
         <div className="flex items-center space-x-4">
           <div className="hidden md:flex items-center space-x-2">
