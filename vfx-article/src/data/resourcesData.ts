@@ -39,16 +39,7 @@ export const articles = [
     image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
     tags: ['Project Management', 'ftrack', 'Coordination']
   },
-  {
-    id: 'article-5',
-    title: 'Building Your VFX Portfolio: Tips from Industry Veterans',
-    excerpt: 'Professional advice on creating a compelling portfolio that gets noticed by VFX studios.',
-    author: 'Robert Taylor',
-    readTime: '7 min read',
-    category: 'beginner',
-    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg',
-    tags: ['Portfolio', 'Career Advice', 'Industry Tips']
-  },
+
   {
     id: 'article-6',
     title: 'Optimizing Your VFX Workflow for Maximum Efficiency',
