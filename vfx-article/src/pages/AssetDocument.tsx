@@ -172,7 +172,7 @@ const AssetDocument: React.FC = () => {
                 </div>
 
                 {/* Documentation Points */}
-                <ul className="text-sm text-gray-300 space-y-2 list-disc list-inside mb-6">
+                {/* <ul className="text-sm text-gray-300 space-y-2 list-disc list-inside mb-6">
                   {doc.notes.map((point, idx) => (
                     <motion.li
                       key={idx}
@@ -183,7 +183,7 @@ const AssetDocument: React.FC = () => {
                       {point}
                     </motion.li>
                   ))}
-                </ul>
+                </ul> */}
 
                 {/* Actions */}
                 <div className="flex justify-start">
