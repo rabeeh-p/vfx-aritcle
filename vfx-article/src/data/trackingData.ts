@@ -192,3 +192,65 @@ export const progressData = {
     }
   ]
 };
+
+export const versionData = {
+  assets: [
+    {
+      id: 'asset-1',
+      name: 'Dragon Character',
+      description: 'Main dragon character with full rig and controls',
+      currentVersion: 'v1.4.2',
+      status: 'approved',
+      lastModified: '2024-01-15',
+      modifiedBy: 'John Doe',
+      versions: [
+        { number: 'v1.4.2', comment: 'Fixed wing control issues' },
+        { number: 'v1.4.1', comment: 'Updated texture resolution' },
+        { number: 'v1.4.0', comment: 'Added facial controls' },
+        { number: 'v1.3.0', comment: 'Initial rigging complete' }
+      ]
+    },
+    {
+      id: 'asset-2',
+      name: 'Castle Environment',
+      description: 'Medieval castle with detailed architecture',
+      currentVersion: 'v2.1.0',
+      status: 'review',
+      lastModified: '2024-01-12',
+      modifiedBy: 'Sarah Wilson',
+      versions: [
+        { number: 'v2.1.0', comment: 'Added weathering details' },
+        { number: 'v2.0.5', comment: 'Optimized geometry' },
+        { number: 'v2.0.0', comment: 'Major overhaul complete' }
+      ]
+    },
+    {
+      id: 'asset-3',
+      name: 'Magic Effects',
+      description: 'Particle system for magical spells',
+      currentVersion: 'v0.8.3',
+      status: 'wip',
+      lastModified: '2024-01-14',
+      modifiedBy: 'Alex Brown',
+      versions: [
+        { number: 'v0.8.3', comment: 'Improved particle behavior' },
+        { number: 'v0.8.0', comment: 'Initial particle setup' },
+        { number: 'v0.7.0', comment: 'Shader development' }
+      ]
+    },
+    {
+      id: 'asset-4',
+      name: 'Spaceship Model',
+      description: 'Hero spaceship with detailed interior',
+      currentVersion: 'v3.2.1',
+      status: 'approved',
+      lastModified: '2024-01-10',
+      modifiedBy: 'Lisa Davis',
+      versions: [
+        { number: 'v3.2.1', comment: 'Final texture adjustments' },
+        { number: 'v3.2.0', comment: 'Added interior details' },
+        { number: 'v3.1.0', comment: 'Completed exterior modeling' }
+      ]
+    }
+  ]
+};
