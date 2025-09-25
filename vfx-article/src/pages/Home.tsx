@@ -139,8 +139,6 @@ const Home: React.FC = () => {
       </section>
 
 
-
-
       {/* Stats Section */}
       <section className="py-24 px-6 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
