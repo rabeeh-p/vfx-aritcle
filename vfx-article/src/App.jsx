@@ -7,8 +7,6 @@ import Tracking from './pages/Tracking';
 import Resources from './pages/Resources';
 import AssetDocument from './pages/AssetDocument';
 
-
-
 function App() {
   return (
     <Router>
