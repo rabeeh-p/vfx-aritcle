@@ -2,17 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FileText, Upload, FolderOpen, Trash2 } from "lucide-react";
 
-// Define the document type
-interface DocumentType {
-  id: number;
-  name: string;
-  size: string;
-  uploadedBy: string;
-  notes: string[];
-}
-
 // Example asset documents
-const documents: DocumentType[] = [
+const documents = [
   {
     id: 1,
     name: "Storyboard.pdf",
@@ -48,7 +39,7 @@ const documents: DocumentType[] = [
   },
 ];
 
-const AssetDocument: React.FC = () => {
+const AssetDocument = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* 🔹 Space Background */}
@@ -100,17 +91,23 @@ const AssetDocument: React.FC = () => {
               📌 What is an Asset?
             </h3>
             <p className="text-gray-300 mb-4">
-              In a production pipeline, an <span className="text-cyan-400">asset</span> is any resource 
-              such as storyboards, concept art, models, textures, or notes that are used to create 
-              the final output. Assets are the building blocks of a project and ensure smooth 
-              collaboration between different teams.
+              In a production pipeline, an{" "}
+              <span className="text-cyan-400">asset</span> is any resource such
+              as storyboards, concept art, models, textures, or notes that are
+              used to create the final output. Assets are the building blocks of
+              a project and ensure smooth collaboration between different teams.
             </p>
             <h4 className="text-xl font-semibold text-purple-400 mb-2">
               🛠 How to Create an Asset:
             </h4>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Prepare your file (Storyboard, Concept Art, VFX Notes, etc.).</li>
-              <li>Click on <span className="text-cyan-400">Upload Document</span> above.</li>
+              <li>
+                Prepare your file (Storyboard, Concept Art, VFX Notes, etc.).
+              </li>
+              <li>
+                Click on <span className="text-cyan-400">Upload Document</span>{" "}
+                above.
+              </li>
               <li>Fill in the details (name, category, and notes).</li>
               <li>Submit it to make it accessible for the entire team.</li>
             </ul>
@@ -199,9 +196,5 @@ const AssetDocument: React.FC = () => {
     </div>
   );
 };
-
-
-
-
 
 export default AssetDocument;
