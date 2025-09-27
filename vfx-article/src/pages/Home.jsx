@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { PlayIcon, CogIcon, ClipboardDocumentListIcon } from '@heroicons/react/24/outline';
 
-const Home: React.FC = () => {
+const Home = () => {
   const features = [
     {
       title: 'Pipeline Stages',
@@ -30,7 +30,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-900">
-      
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-purple-500/10 to-pink-500/10"></div>
@@ -137,7 +136,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
 
       {/* Stats Section */}
       <section className="py-24 px-6 bg-gray-800/50">
