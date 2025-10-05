@@ -147,20 +147,7 @@ const Home = () => {
               { number: '15+', label: 'Industry Tools' },
               { number: '100%', label: 'Fresher Friendly' }
             ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 1.4 + index * 0.1 }}
-                className="group"
-              >
-                <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-                  {stat.number}
-                </div>
-                <div className="text-gray-400 group-hover:text-white transition-colors">
-                  {stat.label}
-                </div>
-              </motion.div>
+              
             ))}
           </div>
         </div>
