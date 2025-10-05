@@ -115,19 +115,19 @@ export const pipelineStages = [
     tools: ['Nuke', 'After Effects', 'Fusion', 'Flame'],
     duration: '3-5 weeks'
   },
-  {
-    id: 'delivery',
-    name: 'Final Delivery',
-    description: 'Preparing final assets for client delivery with proper formatting, quality checks, and documentation. This includes archiving and project wrap-up procedures.',
-    icon: RocketLaunchIcon,
-    gradient: 'from-emerald-400 to-emerald-600',
-    deliverables: [
-      'Final rendered sequences',
-      'Delivery documentation',
-      'Archive packages',
-      'Client review materials'
-    ],
-    tools: ['DaVinci Resolve', 'Aspera', 'Shotgun', 'PIX'],
-    duration: '1-2 weeks'
-  }
+  // {
+  //   id: 'delivery',
+  //   name: 'Final Delivery',
+  //   description: 'Preparing final assets for client delivery with proper formatting, quality checks, and documentation. This includes archiving and project wrap-up procedures.',
+  //   icon: RocketLaunchIcon,
+  //   gradient: 'from-emerald-400 to-emerald-600',
+  //   deliverables: [
+  //     'Final rendered sequences',
+  //     'Delivery documentation',
+  //     'Archive packages',
+  //     'Client review materials'
+  //   ],
+  //   tools: ['DaVinci Resolve', 'Aspera', 'Shotgun', 'PIX'],
+  //   duration: '1-2 weeks'
+  // }
 ];
