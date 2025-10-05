@@ -178,18 +178,7 @@ export const progressData = {
       date: 'Weeks 9-14',
       completed: false
     },
-    {
-      phase: 'Effects & Rendering',
-      description: 'VFX simulation and final rendering',
-      date: 'Weeks 15-20',
-      completed: false
-    },
-    {
-      phase: 'Compositing & Delivery',
-      description: 'Final compositing and client delivery',
-      date: 'Weeks 21-24',
-      completed: false
-    }
+    
   ]
 };
 
