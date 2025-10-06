@@ -10,12 +10,8 @@ const Tracking = () => {
   const tabs = [
     { id: 'kanban', name: 'Kanban Board', description: 'Visual task management' },
     { id: 'progress', name: 'Progress Dashboard', description: 'Project metrics' },
-    // { id: 'versions', name: 'Version Control', description: 'Asset versioning' }
+    // { id: 'versions', name: 'Version Control', description: 'Asset versioning' },
   ];
-
-
-
-
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-6">
@@ -27,7 +23,7 @@ const Tracking = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl font-bold text-white mb-6">
-            VFX{" "}
+            VFX{' '}
             <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               Tracking System
             </span>
