@@ -4,20 +4,18 @@ import ArticleCard from '../components/ArticleCard';
 import FAQSection from '../components/FAQSection';
 import { articles, faqs } from '../data/resourcesData';
 
-const Resources: React.FC = () => {
+const Resources = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const categories = [
     { id: 'all', name: 'All Resources' },
     { id: 'beginner', name: 'Beginner Guide' },
-
   ];
 
-
-  
-  const filteredArticles = activeCategory === 'all' 
-    ? articles 
-    : articles.filter(article => article.category === activeCategory);
+  const filteredArticles =
+    activeCategory === 'all'
+      ? articles
+      : articles.filter((article) => article.category === activeCategory);
 
   return (
     <div className="min-h-screen bg-gray-900 py-12 px-6">
@@ -29,10 +27,14 @@ const Resources: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl font-bold text-white mb-6">
-            Learning <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Resources</span>
+            Learning{' '}
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              Resources
+            </span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Curated articles, guides, and frequently asked questions to accelerate your VFX learning journey.
+            Curated articles, guides, and frequently asked questions to
+            accelerate your VFX learning journey.
           </p>
         </motion.div>
 
@@ -59,10 +61,7 @@ const Resources: React.FC = () => {
         </motion.div>
 
         {/* Articles Grid */}
-        <motion.div
-          layout
-          className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-16"
-        >
+        <motion.div layout className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-16">
           {filteredArticles.map((article, index) => (
             <motion.div
               key={article.id}
@@ -89,7 +88,6 @@ const Resources: React.FC = () => {
     </div>
   );
 };
-
 
 
 export default Resources;
