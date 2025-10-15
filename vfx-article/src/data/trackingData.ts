@@ -238,6 +238,19 @@ export const versionData = {
         { number: 'v0.7.0', comment: 'Shader development' }
       ]
     },
-   
+    {
+      id: 'asset-4',
+      name: 'Spaceship Model',
+      description: 'Hero spaceship with detailed interior',
+      currentVersion: 'v3.2.1',
+      status: 'approved',
+      lastModified: '2024-01-10',
+      modifiedBy: 'Lisa Davis',
+      versions: [
+        { number: 'v3.2.1', comment: 'Final texture adjustments' },
+        { number: 'v3.2.0', comment: 'Added interior details' },
+        { number: 'v3.1.0', comment: 'Completed exterior modeling' }
+      ]
+    }
   ]
 };

@@ -52,7 +52,7 @@ const Home = () => {
                 VFX Pipeline
               </span>
               <br />
-              <span className="text-white">Mastery</span>
+              <span className="text-white">MASTERY</span>
             </motion.h1>
             
             <motion.p
