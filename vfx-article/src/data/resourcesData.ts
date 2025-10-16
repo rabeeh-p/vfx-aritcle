@@ -86,16 +86,5 @@ export const faqs = [
     answer: 'Timeline varies greatly depending on complexity, but a typical VFX shot can take anywhere from a few days for simple compositing to several months for complex creature work or large-scale destruction sequences. Planning and pre-visualization help establish realistic timelines.',
     category: 'workflow'
   },
-  {
-    id: 'faq-5',
-    question: 'What\'s the difference between 2D and 3D VFX work?',
-    answer: '2D VFX focuses on compositing, matte painting, and image manipulation using tools like Nuke and After Effects. 3D VFX involves creating three-dimensional elements like characters, environments, and effects using software like Maya, Houdini, and Cinema 4D. Many modern shots combine both approaches.',
-    category: 'basics'
-  },
-  {
-    id: 'faq-6',
-    question: 'How do version control systems work in VFX?',
-    answer: 'Version control in VFX tracks changes to digital assets over time, allowing teams to collaborate safely, revert changes if needed, and maintain a complete history of asset development. Systems like Perforce or Git-based solutions help manage large files and complex dependencies common in VFX production.',
-    category: 'workflow'
-  }
+ 
 ];
