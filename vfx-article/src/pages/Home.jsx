@@ -107,6 +107,8 @@ const Home = () => {
             </p>
           </motion.div>
 
+
+
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <motion.div
