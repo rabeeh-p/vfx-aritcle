@@ -74,31 +74,7 @@ export const kanbanData = {
         }
       ]
     },
-    {
-      id: 'done',
-      name: 'Completed',
-      gradient: 'from-green-400 to-green-600',
-      bgColor: 'bg-green-500/20',
-      textColor: 'text-green-400',
-      tasks: [
-        {
-          id: 'task-6',
-          title: 'Texture Creation',
-          description: 'PBR textures for spaceship model',
-          priority: 'Medium',
-          assignee: 'Lisa Davis',
-          progress: 100
-        },
-        {
-          id: 'task-7',
-          title: 'Storyboard Approval',
-          description: 'Client approved storyboard sequence',
-          priority: 'Low',
-          assignee: 'Tom Anderson',
-          progress: 100
-        }
-      ]
-    }
+   
   ]
 };
 
