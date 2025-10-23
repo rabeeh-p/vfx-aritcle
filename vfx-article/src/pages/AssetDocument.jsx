@@ -88,7 +88,7 @@ const AssetDocument = () => {
             className="bg-gray-800/80 border border-gray-700 rounded-2xl shadow-xl p-6 mb-10"
           >
             <h3 className="text-2xl font-semibold text-cyan-400 mb-3">
-              📌 What is an Asset?
+              📌 What is an Asset ??
             </h3>
             <p className="text-gray-300 mb-4">
               In a production pipeline, an{" "}
