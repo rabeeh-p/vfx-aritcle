@@ -11,6 +11,9 @@ const FAQSection = ({ faqs }) => {
         Frequently Asked Questions
       </h2>
 
+
+
+
       <div className="space-y-4 max-w-4xl mx-auto">
         {faqs.map((faq, index) => (
           <motion.div
@@ -20,6 +23,7 @@ const FAQSection = ({ faqs }) => {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden"
           >
+            
             <button
               onClick={() => setOpenFAQ(openFAQ === faq.id ? null : faq.id)}
               className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-700/50 transition-colors"
@@ -35,7 +39,6 @@ const FAQSection = ({ faqs }) => {
               </motion.div>
             </button>
 
-            {/* ANIMATION */}
             <AnimatePresence>
               {openFAQ === faq.id && (
                 <motion.div
