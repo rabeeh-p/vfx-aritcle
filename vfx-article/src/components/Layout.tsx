@@ -10,6 +10,8 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+
+
   return (
     <div className="flex h-screen bg-gray-900">
       <AnimatePresence>
@@ -25,11 +27,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </motion.div>
         )}
       </AnimatePresence>
-
       <div className="hidden lg:block w-64 bg-gray-800">
         <Sidebar />
       </div>
-
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header onMenuClick={() => setSidebarOpen(true)} />
         <main className="flex-1 overflow-auto">
@@ -45,5 +45,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     </div>
   );
 };
+
 
 export default Layout;
