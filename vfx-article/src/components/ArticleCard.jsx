@@ -2,34 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ClockIcon, UserIcon } from '@heroicons/react/24/outline';
 
-// INTERFACE ARTICLE
-interface Article {
-  id: string;
-  title: string;
-  excerpt: string;
-  author: string;
-  readTime: string;
-  category: string;
-  image: string;
-  tags: string[];
-}
-// INTERFACE
-interface ArticleCardProps {
-  article: Article;
-}
-
-
-
-
-
-
-
-
-
-
-
-// ARTICLE CARD
-const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
+const ArticleCard = ({ article }) => {
   return (
     <motion.div
       whileHover={{ y: -10, scale: 1.02 }}
@@ -50,19 +23,12 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
         </div>
       </div>
 
-
-
-
-
-
-
-
       {/* TITLE */}
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors line-clamp-2">
           {article.title}
         </h3>
-        
+
         <p className="text-gray-400 mb-4 line-clamp-3 leading-relaxed">
           {article.excerpt}
         </p>
