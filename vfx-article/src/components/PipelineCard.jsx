@@ -1,22 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-interface PipelineStage {
-  id: string;
-  name: string;
-  description: string;
-  icon: React.ComponentType<{ className?: string }>;
-  gradient: string;
-  deliverables: string[];
-  tools: string[];
-  duration: string;
-}
-
-interface PipelineCardProps {
-  stage: PipelineStage;
-}
-
-const PipelineCard: React.FC<PipelineCardProps> = ({ stage }) => {
+const PipelineCard = ({ stage }) => {
   return (
     <motion.div
       whileHover={{ y: -5, scale: 1.02 }}
@@ -24,10 +9,12 @@ const PipelineCard: React.FC<PipelineCardProps> = ({ stage }) => {
       className="bg-gray-800 rounded-2xl border border-gray-700 hover:border-cyan-500/50 overflow-hidden group"
     >
       <div className={`h-2 bg-gradient-to-r ${stage.gradient}`}></div>
-      
+
       <div className="p-8">
         <div className="flex items-center mb-6">
-          <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${stage.gradient} p-4 mr-4 group-hover:scale-110 transition-transform duration-300`}>
+          <div
+            className={`w-16 h-16 rounded-xl bg-gradient-to-br ${stage.gradient} p-4 mr-4 group-hover:scale-110 transition-transform duration-300`}
+          >
             <stage.icon className="w-8 h-8 text-white" />
           </div>
           <div>
@@ -38,13 +25,13 @@ const PipelineCard: React.FC<PipelineCardProps> = ({ stage }) => {
           </div>
         </div>
 
-        <p className="text-gray-300 mb-6 leading-relaxed">
-          {stage.description}
-        </p>
+        <p className="text-gray-300 mb-6 leading-relaxed">{stage.description}</p>
 
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h4 className="text-lg font-semibold text-cyan-400 mb-3">Deliverables</h4>
+            <h4 className="text-lg font-semibold text-cyan-400 mb-3">
+              Deliverables
+            </h4>
             <ul className="space-y-2">
               {stage.deliverables.map((item, index) => (
                 <li key={index} className="flex items-center text-gray-300">
@@ -56,7 +43,9 @@ const PipelineCard: React.FC<PipelineCardProps> = ({ stage }) => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-purple-400 mb-3">Common Tools</h4>
+            <h4 className="text-lg font-semibold text-purple-400 mb-3">
+              Common Tools
+            </h4>
             <div className="flex flex-wrap gap-2">
               {stage.tools.map((tool, index) => (
                 <span
