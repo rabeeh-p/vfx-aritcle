@@ -61,7 +61,6 @@ const KanbanBoard = () => {
                         </span>
                         <span className="text-xs text-gray-500">{task.assignee}</span>
                       </div>
-
                       {task.progress && (
                         <div className="mt-3">
                           <div className="flex justify-between text-xs text-gray-400 mb-1">
@@ -89,5 +88,6 @@ const KanbanBoard = () => {
     </div>
   );
 };
+
 
 export default KanbanBoard;
