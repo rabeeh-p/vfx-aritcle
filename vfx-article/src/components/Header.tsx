@@ -8,7 +8,6 @@ interface HeaderProps {
 
 
 const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
-  const [searchQuery, setSearchQuery] = useState('');
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
