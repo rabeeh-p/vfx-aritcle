@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { progressData } from '../data/trackingData';
 
-const ProgressDashboard: React.FC = () => {
+const ProgressDashboard = () => {
   return (
     <div className="space-y-8">
 
@@ -25,7 +25,6 @@ const ProgressDashboard: React.FC = () => {
           </motion.div>
         ))}
       </div>
-
 
       {/* Department Progress */}
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
@@ -102,7 +101,6 @@ const ProgressDashboard: React.FC = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
