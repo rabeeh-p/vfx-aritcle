@@ -12,7 +12,6 @@ import {
 interface SidebarProps {
   onClose?: () => void;
 }
-
 // navigation items
 const navigationItems = [
   { name: 'Home', href: '/', icon: HomeIcon },
@@ -21,7 +20,6 @@ const navigationItems = [
   { name: 'Resources', href: '/resources', icon: BookOpenIcon },
   { name: 'Asset', href: '/asset', icon: BookOpenIcon },
 ];
-
 
 // sidebar
 const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
