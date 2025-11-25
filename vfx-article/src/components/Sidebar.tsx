@@ -20,7 +20,6 @@ const navigationItems = [
   { name: 'Resources', href: '/resources', icon: BookOpenIcon },
   { name: 'Asset', href: '/asset', icon: BookOpenIcon },
 ];
-
 // sidebar
 const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   return (
@@ -48,7 +47,6 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
           </button>
         )}
       </div>
-
       <nav className="flex-1 px-4 pb-4 space-y-2">
         {navigationItems.map((item, index) => (
           <motion.div
