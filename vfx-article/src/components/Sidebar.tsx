@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -9,9 +11,6 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline';
 
-interface SidebarProps {
-  onClose?: () => void;
-}
 // navigation items
 const navigationItems = [
   { name: 'Home', href: '/', icon: HomeIcon },
@@ -20,8 +19,8 @@ const navigationItems = [
   { name: 'Resources', href: '/resources', icon: BookOpenIcon },
   { name: 'Asset', href: '/asset', icon: BookOpenIcon },
 ];
-// sidebar
-const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
+
+const Sidebar = ({ onClose }) => {
   return (
     <div className="flex flex-col h-full bg-gray-800 border-r border-gray-700">
       <div className="flex items-center justify-between p-6">
@@ -38,6 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
             VFX Pipeline
           </span>
         </motion.div>
+
         {onClose && (
           <button
             onClick={onClose}
@@ -47,6 +47,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
           </button>
         )}
       </div>
+
       <nav className="flex-1 px-4 pb-4 space-y-2">
         {navigationItems.map((item, index) => (
           <motion.div
