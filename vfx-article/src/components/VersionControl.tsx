@@ -9,7 +9,7 @@ const VersionControl: React.FC = () => {
     <div className="space-y-8">
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">
-          Asset Version Control
+          Asset Version CONTROL
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
