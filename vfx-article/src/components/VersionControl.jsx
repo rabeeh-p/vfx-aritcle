@@ -34,9 +34,7 @@ const VersionControl = () => {
                   {asset.status}
                 </span>
               </div>
-
               <p className="text-gray-400 text-sm mb-4">{asset.description}</p>
-
               <div className="space-y-3">
                 <div className="text-sm text-gray-400">
                   <span className="font-medium">Current Version:</span>
@@ -44,18 +42,15 @@ const VersionControl = () => {
                     {asset.currentVersion}
                   </span>
                 </div>
-
                 <div className="text-sm text-gray-400">
                   <span className="font-medium">Last Modified:</span>
                   <span className="ml-2">{asset.lastModified}</span>
                 </div>
-
                 <div className="text-sm text-gray-400">
                   <span className="font-medium">Modified By:</span>
                   <span className="ml-2">{asset.modifiedBy}</span>
                 </div>
               </div>
-
               <div className="mt-6">
                 <h4 className="text-sm font-medium text-gray-400 mb-3">
                   Version History
@@ -84,12 +79,10 @@ const VersionControl = () => {
           ))}
         </div>
       </div>
-
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
         <h3 className="text-2xl font-bold text-white mb-6">
           Version Control Workflow
         </h3>
-
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -134,5 +127,4 @@ const VersionControl = () => {
     </div>
   );
 };
-
 export default VersionControl;
