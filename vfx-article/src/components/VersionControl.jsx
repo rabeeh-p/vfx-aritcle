@@ -80,7 +80,7 @@ const VersionControl = () => {
       </div>
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
         <h3 className="text-2xl font-bold text-white mb-6">
-          Version Control Workflow
+          Version Control WORKFLOW
         </h3>
         <div className="grid md:grid-cols-3 gap-6">
           {[
