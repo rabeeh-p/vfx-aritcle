@@ -8,7 +8,7 @@ const VersionControl = () => {
     <div className="space-y-8">
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">
-          Asset Version CONTROL
+          Asset Version Control
         </h2>
         <div className="grid lg:grid-cols-2 gap-8">
           {versionData.assets.map((asset, index) => (
@@ -90,6 +90,10 @@ const VersionControl = () => {
               icon: '📥',
               color: 'from-blue-400 to-blue-600'
             },
+
+
+
+
             {
               title: 'Work & Iterate',
               description: 'Artist makes changes and saves work in progress',
@@ -125,7 +129,5 @@ const VersionControl = () => {
       </div>
     </div>
   );
-
-  
 };
 export default VersionControl;
