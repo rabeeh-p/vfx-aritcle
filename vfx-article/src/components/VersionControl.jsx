@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { versionData } from '../data/trackingData';
 
-// version control
 const VersionControl = () => {
   return (
     <div className="space-y-8">
