@@ -1,8 +1,10 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { versionData } from '../data/trackingData';
 
 const VersionControl = () => {
+
+
+
   return (
     <div className="space-y-8">
       <div className="bg-gray-800/50 rounded-2xl border border-gray-700 p-8">
