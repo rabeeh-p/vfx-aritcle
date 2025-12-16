@@ -1,14 +1,13 @@
+
+
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
 
-interface HeaderProps {
-  onMenuClick: () => void;
-}
-
-
-const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
+const Header = ({ onMenuClick }) => {
   const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
@@ -34,6 +33,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-200"
             />
+
             {searchQuery && (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -47,6 +47,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
             )}
           </div>
         </div>
+
         <div className="flex items-center space-x-4">
           <div className="hidden md:flex items-center space-x-2">
             <div className="w-2 h-2 rounded-full bg-green-400"></div>
@@ -57,6 +58,5 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
     </motion.header>
   );
 };
-
 
 export default Header;
