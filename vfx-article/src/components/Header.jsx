@@ -1,6 +1,4 @@
 
-
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
