@@ -7,7 +7,6 @@ import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
 
 const Header = ({ onMenuClick }) => {
   const [searchQuery, setSearchQuery] = useState('');
-
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
