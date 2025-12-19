@@ -13,7 +13,10 @@ function App() {
       <div className="min-h-screen bg-gray-900 text-white">
         <Layout>
           <Routes>
+            {/* HOME PAGE */}
             <Route path="/" element={<Home />} />
+            
+            {/* PIPELINE */}
             <Route path="/pipeline" element={<Pipeline />} />
             <Route path="/tracking" element={<Tracking />} />
             <Route path="/asset" element={<AssetDocument />} />
