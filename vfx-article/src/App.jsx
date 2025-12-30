@@ -8,10 +8,6 @@ import Resources from './pages/Resources';
 import AssetDocument from './pages/AssetDocument';
 
 
-
-
-
-
 function App() {
   return (
     <Router>
