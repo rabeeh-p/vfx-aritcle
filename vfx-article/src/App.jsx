@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-900 text-white">
-        <Layout>44tel
+        <Layout>
           <Routes>
             {/* HOME PAGE */}
             <Route path="/" element={<Home />} />
