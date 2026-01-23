@@ -131,3 +131,4 @@ export const pipelineStages = [
     duration: '1-2 weeks'
   }
 ];
+
