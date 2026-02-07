@@ -112,7 +112,7 @@ export const pipelineStages = [
       'Integration with live action',
       'Stereoscopic conversion (if needed)'
     ],
-    tools: ['Nuke', 'After Effects', 'Fusion', 'Flame'],
+    tools: ['Nuke', 'After Effects', 'Fusion',],
     duration: '3-5 weeks'
   },
   {
@@ -131,4 +131,9 @@ export const pipelineStages = [
     duration: '1-2 weeks'
   }
 ];
+
+
+
+
+
 
