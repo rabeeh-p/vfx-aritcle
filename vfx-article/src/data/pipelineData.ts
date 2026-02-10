@@ -124,7 +124,7 @@ export const pipelineStages = [
     deliverables: [
       'Final rendered sequences',
       'Delivery documentation',
-      'Client review materials'
+      
     ],
     tools: ['DaVinci Resolve', 'Aspera', 'Shotgun', 'PIX'],
     duration: '1-2 weeks'
