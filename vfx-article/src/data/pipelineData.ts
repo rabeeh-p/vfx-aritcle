@@ -126,7 +126,7 @@ export const pipelineStages = [
       'Delivery documentation',
       
     ],
-    tools: ['DaVinci Resolve', 'Aspera', 'Shotgun', ],
+    tools: ['DaVinci Resolve', 'Aspera',  ],
     duration: '1-2 weeks'
   }
 ];
