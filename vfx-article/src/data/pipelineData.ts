@@ -123,7 +123,6 @@ export const pipelineStages = [
     gradient: 'from-emerald-400 to-emerald-600',
     deliverables: [
       'Final rendered sequences',
-      'Delivery documentation',
       
     ],
     tools: ['DaVinci Resolve',   ],
