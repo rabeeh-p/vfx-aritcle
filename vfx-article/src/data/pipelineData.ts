@@ -126,14 +126,10 @@ export const pipelineStages = [
       
     ],
     tools: ['DaVinci Resolve',   ],
-    duration: '1-2 weeks'
+    duration: '1-2 week]'
 
   }
 ];
-
-
-
-
 
 
 
