@@ -124,6 +124,11 @@ export const pipelineStages = [
     deliverables: [
       'Final rendered sequences',
       
+
+
+
+      
+
     ],
     tools: ['DaVinci Resolve',   ],
     duration: '1-2 week]'
