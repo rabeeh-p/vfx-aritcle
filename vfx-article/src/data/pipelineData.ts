@@ -113,7 +113,7 @@ export const pipelineStages = [
       'Stereoscopic conversion (if needed)'
     ],
     tools: ['Nuke', 'After Effects', 'Fusion',],
-    duration: '3-5 weeks'
+    duration: '3-5 weeks '
   },
   {
     id: 'delivery',
