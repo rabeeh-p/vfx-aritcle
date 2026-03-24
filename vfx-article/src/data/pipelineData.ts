@@ -71,6 +71,8 @@ export const pipelineStages = [
     duration: '3-6 weeks'
   },
   {
+
+    
     id: 'effects',
     name: 'Effects & Simulation',
     description: 'Creating dynamic elements like fire, water, smoke, and destruction. This stage adds realism and spectacle through physics-based simulations and procedural effects.',
@@ -123,16 +125,9 @@ export const pipelineStages = [
     gradient: 'from-emerald-400 to-emerald-600',
     deliverables: [
       'Final rendered sequences',
-      
-
-
-
-      
-
     ],
-    tools: ['DaVinci Resolve',   ],
-    duration: '1-2 week]'
-
+    tools: ['DaVinci Resolve', ],
+    duration: '1-2 week]',
   }
 ];
 
