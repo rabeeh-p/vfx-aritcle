@@ -74,7 +74,7 @@ export const pipelineStages = [
 
     
     id: 'effects',
-    name: 'Effects & Simulation',
+    name: 'Effects & Simulationn',
     description: 'Creating dynamic elements like fire, water, smoke, and destruction. This stage adds realism and spectacle through physics-based simulations and procedural effects.',
     icon: SparklesIcon,
     gradient: 'from-red-400 to-pink-600',
