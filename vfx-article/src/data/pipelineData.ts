@@ -84,7 +84,7 @@ export const pipelineStages = [
       'Destruction and debris',
       'Environmental effects'
     ],
-    tools: ['Houdini', 'Phoenix FD', 'RealFlow', 'FumeFX'],
+    tools: ['Houdini', 'Phoenix FD', 'RealFlow', ],
     duration: '4-8 weeks'
   },
   {
