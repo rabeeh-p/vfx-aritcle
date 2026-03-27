@@ -23,7 +23,7 @@ export const pipelineStages = [
       'Asset list and scope definition'
     ],
     tools: ['Photoshop', 'Storyboard Pro', 'PureRef', 'Miro'],
-    duration: '2-4 weeks'
+    duration: '2-4 week'
   },
   {
     id: 'assets',
