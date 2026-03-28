@@ -66,7 +66,6 @@ export const pipelineStages = [
       'Character animation',
       'Crowd simulation',
       'Timing and blocking',
-      'None'
     ],
     tools: ['Maya', 'Motion Capture', 'Massive', 'Houdini'],
     duration: '3-6 weeks'
