@@ -126,8 +126,6 @@ const AssetDocument = () => {
             </button>
           </motion.div>
 
-
-
           <motion.div
             initial="hidden"
             animate="show"
