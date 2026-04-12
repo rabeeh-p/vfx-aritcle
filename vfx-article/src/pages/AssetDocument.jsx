@@ -122,7 +122,7 @@ const AssetDocument = () => {
           >
             <button className="bg-gradient-to-r from-cyan-500 to-purple-600 text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 hover:scale-105 transition-transform">
               <Upload className="w-5 h-5" />
-              Upload Document
+              Upload Document1
             </button>
           </motion.div>
 
