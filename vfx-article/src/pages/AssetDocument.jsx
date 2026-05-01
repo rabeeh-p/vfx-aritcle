@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FileText, Upload, FolderOpen, Trash2 } from "lucide-react";
 
+// Example asset documents
 const documents = [
   {
     id: 1,
